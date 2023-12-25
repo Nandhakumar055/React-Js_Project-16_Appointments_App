@@ -1,0 +1,154 @@
+.add-appointment-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7%;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, rgb(167, 7, 199), rgb(81, 26, 92));
+}
+
+.add-appointment-card {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  height: 100%;
+}
+
+/* Top-section =>> Add Appointment Section */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.heading {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.animate-image {
+  width: 100%;
+  padding: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.label {
+  color: gray;
+  padding-bottom: 10px;
+  font-size: small;
+  margin-top: 30px;
+}
+.user-input {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 380px;
+  border: 2px rgb(211, 161, 235) solid;
+}
+
+.error-msg {
+  margin: 0;
+  margin-top: 5px;
+  color: red;
+}
+
+.add-button {
+  align-self: flex-start;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  margin: 30px 0px;
+  background-image: linear-gradient(
+    to right,
+    rgb(167, 7, 199),
+    rgb(81, 26, 92)
+  );
+}
+
+/* Bottom-section =>> Appointment Items Section */
+
+.heading-and-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.appointment-heading {
+  padding: 15px 0px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.stared-button {
+  border: 8px;
+  padding: 10px 25px;
+  background-color: transparent;
+  border: none;
+  border: solid 2px rgb(167, 7, 199);
+  border-radius: 10px;
+  color: rgb(167, 7, 199);
+}
+.changeStyle {
+  border: 8px;
+  padding: 10px 25px;
+  border: none;
+  border: solid 1px rgb(167, 7, 199);
+  border-radius: 10px;
+  background-color: rgb(167, 7, 199);
+  color: white;
+}
+
+.empty-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+.empty-msg {
+  text-align: center;
+  color: rgb(167, 7, 199);
+  font-size: 18px;
+}
+
+.appointment-items-container {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+  .image-container {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .animate-image {
+    padding-left: 20px;
+  }
+  .form-container {
+    width: 50%;
+  }
+}

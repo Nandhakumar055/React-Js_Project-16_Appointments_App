@@ -1,0 +1,57 @@
+.appointment-main-item {
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+}
+
+.appointment-item {
+  padding: 0px 10px;
+  border-radius: 15px;
+  border: solid rgb(167, 7, 199) 2px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(243, 191, 250)
+  );
+}
+
+.title-and-star-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-name {
+  font-size: 16px;
+}
+
+.star-icon-button {
+  border: none;
+}
+.favorite-star-icon-image {
+  width: 25px;
+}
+.selected-date {
+  color: gray;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .appointment-main-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-main-item {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .appointment-main-item {
+    width: 25%;
+  }
+}
